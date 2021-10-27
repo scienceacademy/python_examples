@@ -9,11 +9,11 @@ numbers = [i for i in range(1, 1001)]
 evens = [i for i in numbers if i % 2 == 0]
 sixes = [i for i in numbers if "6" in str(i)]
 
-## format of a list comprehension:
-#
-# for _variable_ in _collection_:
-#     if _condition_:
-#         _output_
-## becomes:
-# [output for _variable_ in _collection_ if _condition_]
+text = "The slick slimy squid slithered through the slick seaweed."
+words = len([char for char in text if char = " "])\
 
+# double numbers less than 100, other wise subtract 100 from them
+weird = [i * 2
+        if i < 100
+        else i - 100
+        for i in numbers]
