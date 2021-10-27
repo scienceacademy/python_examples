@@ -43,7 +43,7 @@ def check_board():
 def is_valid(move):
     row = move // 10
     col = move % 10
-    if (0 > row > 2) or (0 > col > 2):
+    if row < 0 or row > 2 or col < 0 or col > 2:
         return False
     if board[row][col] == 0:
         return True
@@ -69,6 +69,7 @@ while True:
         print("Tie")
         break
     elif winner:
+        print_board()
         print(f"Winner {players[winner]}")
         break
     if player == 1:
